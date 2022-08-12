@@ -1,1 +1,6 @@
-# Naive-Bayes-and-Logistic-regression-
+# Naive Bayes and Logistic Regression
+The performance of the Naive Bayes and Logistic regression models were compared on the binary-labelled Sentiment 140 dataset and the multiclass-labelled 20 Newsgroup dataset. To optimize model performance, hyperparameters were tuned using 5-fold validation. 
+
+This project compared the performance of machine learning models Naive Bayes and Logistic regression on one binary classification task involving the Sentiment 140 dataset and a multivariable classification task involving the Newsgroup20 dataset. Hyperparameters were tuned for both models: Laplace smoothing pseudo counts for Naive Bayes and different loss penalties (L1 and L2) in addition to the ratio evaluating the weight of considering (trusting) the training data (C value).  
+
+In order to better estimate the generalization error and tune hyperparameters, the K-cross validation algorithm was used with a K fold value of 5. For multinomial Naive Bayes, we introduced Laplace smoothing and tuned pseudo counts as the hyperparameter alpha. The Logistic Regression models were trained by ascertaining the weight values for features using the minimization of the cost function. The random search was used to tune the hyperparameter in Logistic Regression for Regularization strength, Elastic-Net parameter, and the maximum number of iterations in gradient descent. 
